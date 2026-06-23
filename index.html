@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Ultimate Gyms | Mahavir Enclave, New Delhi</title>
+    <!-- Tailwind CSS for modern layout & styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Razorpay Secure Checkout Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f19; }
+    </style>
+</head>
+<body class="text-gray-100 selection:bg-orange-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-extrabold tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-400">
+                    Pro Ultimate
+                </span>
+                <span class="text-xs font-bold px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-400 rounded">GYMS</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide text-gray-300">
+                <a href="#home" class="hover:text-orange-500 transition">Home</a>
+                <a href="#about" class="hover:text-orange-500 transition">About</a>
+                <a href="#pricing" class="hover:text-orange-500 transition">Memberships</a>
+                <a href="#reviews" class="hover:text-orange-500 transition">Testimonials</a>
+                <a href="#contact" class="hover:text-orange-500 transition">Location</a>
+            </nav>
+            <div>
+                <a href="#pricing" class="bg-gradient-to-r from-orange-500 to-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm tracking-wide shadow-lg shadow-orange-500/20 hover:opacity-90 transition">
+                    JOIN SQUAD
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-slate-950 z-0">
+            <div class="absolute inset-0 opacity-40 mix-blend-color-dodge bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/20"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <span class="inline-block text-xs font-bold tracking-widest text-orange-500 uppercase bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/30 mb-6">
+                Be Stronger Than Your Excuses
+            </span>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-6 uppercase">
+                TRANSFORM YOUR <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-400 to-orange-500 bg-size-200">FITNESS JOURNEY</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
+                Experience New Delhi's top-tier training facility equipped with premium strength machinery, premium hygiene standards, and elite personal coaches.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#pricing" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 text-slate-950 shadow-xl shadow-orange-500/20 hover:translate-y-[-2px] transition duration-200 text-center">
+                    View Membership Tiers
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold bg-slate-900 border border-slate-800 text-white hover:bg-slate-800 transition text-center">
+                    Find Our Gym Location
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gym Details Quick Info -->
+    <section id="about" class="bg-slate-900 border-y border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-orange-500/10 border border-orange-500/20 text-orange-500 rounded-xl">
+                    <i class="fa-solid fa-clock text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-1">Extensive Operating Hours</h3>
+                    <p class="text-sm text-slate-400">Mon - Sat: 5:00 AM - 11:00 PM <br>Sun: 10:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-orange-500/10 border border-orange-500/20 text-orange-500 rounded-xl">
+                    <i class="fa-solid fa-star text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-1">Top Tier Standing</h3>
+                    <p class="text-sm text-slate-400">Rated <span class="text-amber-400 font-bold">4.8 Stars</span> on Google Business with premium verified user reviews.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-orange-500/10 border border-orange-500/20 text-orange-500 rounded-xl">
+                    <i class="fa-solid fa-dumbbell text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-1">Premium Machinery</h3>
+                    <p class="text-sm text-slate-400">Fully equipped facility with top-notch strength, functional, and cardio lines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Membership Plans -->
+    <section id="pricing" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-extrabold uppercase text-white tracking-wide">Membership Tiers</h2>
+            <p class="text-slate-400 mt-3">Choose the plan that matches your goals and kickstart your transformation.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Plan 1 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col relative overflow-hidden group">
+                <h3 class="text-xl font-bold text-white mb-2">Monthly Basic</h3>
+                <p class="text-sm text-slate-400 mb-6">Access to all premium workout equipment lines.</p>
+                <div class="flex items-baseline gap-1 mb-8">
+                    <span class="text-4xl font-extrabold text-white">₹2,000</span>
+                    <span class="text-sm text-slate-500">/ month</span>
+                </div>
+                <ul class="space-y-4 text-sm text-slate-300 mb-8 flex-grow">
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> Full Gym Floor Access</li>
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> General Trainer Support</li>
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> Locker & Shower Facilities</li>
+                </ul>
+                <button onclick="payWithRazorpay(2000, 'Monthly Basic Plan')" class="w-full py-3 bg-slate-800 hover:bg-orange-500 hover:text-slate-950 font-bold rounded-xl transition duration-200">
+                    Select Plan
+                </button>
+            </div>
+
+            <!-- Plan 2 (Highlighted) -->
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border-2 border-orange-500 rounded-2xl p-8 flex flex-col relative overflow-hidden shadow-2xl shadow-orange-500/10">
+                <div class="absolute top-0 right-0 bg-orange-500 text-slate-950 text-xs font-bold px-4 py-1 uppercase rounded-bl-xl tracking-wider">
+                    Most Popular
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Quarterly Pro</h3>
+                <p class="text-sm text-slate-400 mb-6">Optimized value with guided progression mapping.</p>
+                <div class="flex items-baseline gap-1 mb-8">
+                    <span class="text-4xl font-extrabold text-white">₹5,000</span>
+                    <span class="text-sm text-slate-500">/ 3 months</span>
+                </div>
+                <ul class="space-y-4 text-sm text-slate-300 mb-8 flex-grow">
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> Full Floor Access</li>
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> Workout Blueprint Planning</li>
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> Premium Locker Options</li>
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> Bi-weekly Progress Monitoring</li>
+                </ul>
+                <button onclick="payWithRazorpay(5000, 'Quarterly Pro Plan')" class="w-full py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-slate-950 font-bold rounded-xl shadow-lg shadow-orange-500/20 hover:opacity-90 transition duration-200">
+                    Select Plan
+                </button>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col relative overflow-hidden group">
+                <h3 class="text-xl font-bold text-white mb-2">Annual Elite</h3>
+                <p class="text-sm text-slate-400 mb-6">Complete physical transformation and commitment.</p>
+                <div class="flex items-baseline gap-1 mb-8">
+                    <span class="text-4xl font-extrabold text-white">₹15,000</span>
+                    <span class="text-sm text-slate-500">/ year</span>
+                </div>
+                <ul class="space-y-4 text-sm text-slate-300 mb-8 flex-grow">
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> 1 Year Unlimited Access</li>
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> 5 Complimentary Personal Coaching Sessions</li>
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> Tailored Nutrition Guidance Blueprints</li>
+                    <li><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> All Gym Ambiance Perks Included</li>
+                </ul>
+                <button onclick="payWithRazorpay(15000, 'Annual Elite Plan')" class="w-full py-3 bg-slate-800 hover:bg-orange-500 hover:text-slate-950 font-bold rounded-xl transition duration-200">
+                    Select Plan
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Business Reviews Section -->
+    <section id="reviews" class="py-24 bg-slate-900 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold uppercase text-white tracking-wide">Real Experiences</h2>
+                <p class="text-slate-400 mt-3">Read verified feedback from active members who train at our Mahavir Enclave branch.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-slate-955 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between bg-slate-950">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "The facility is always clean, well-organized, and equipped with top-notch machines. But what truly sets this gym apart is the personal trainer, Ravi. Ravi is an incredible trainer who really knows how to push you to reach your goals. His workouts are challenging but always varied and fun..."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-900 pt-4 flex items-center justify-between text-xs text-slate-500">
+                        <span class="font-bold text-slate-300">Verified Member</span>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-955 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between bg-slate-950">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "The gym is very good i can be stronger than my excuses, and after months of motivation joined this new gym and its perfect in All Sense Ambience, Equipments, Machines and Management and best part is Experienced Trainers. Bhanu Sir he's the goat 🐐 trainer in this gym..."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-900 pt-4 flex items-center justify-between text-xs text-slate-500">
+                        <span class="font-bold text-slate-300">Verified Member</span>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-955 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between bg-slate-950">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Honest review this is the best place if you’re looking for the place with great facilities and ambiance and their staff is very helpful and supportive. 5star from my side."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-900 pt-4 flex items-center justify-between text-xs text-slate-500">
+                        <span class="font-bold text-slate-300">Verified Member</span>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Footer Section -->
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Address Context Details -->
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-3xl font-extrabold uppercase text-white tracking-wide">Visit Our Facility</h2>
+                    <p class="text-slate-400 mt-2">Come in for a walkthrough and consult with an expert trainer on site.</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-orange-500 mt-1"><i class="fa-solid fa-location-dot text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Physical Address</h4>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Mahavir Enclave, Metro Station, B-8, near Dashrath Puri, <br>
+                                above Hunk Showroom, Ch Harphool Singh Market, <br>
+                                Mahavir Enclave Part 1, New Delhi, Delhi 110045, India
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="text-orange-500 mt-1"><i class="fa-solid fa-phone text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Phone Line</h4>
+                            <p class="text-sm text-slate-400">+91 88513 39955</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Google Maps Embedded Element Container -->
+            <div class="bg-slate-900 border border-slate-800 p-2 rounded-2xl h-96 overflow-hidden shadow-2xl relative">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.2201416738476!2d77.0784381!3d28.5931872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b0021c9caf9%3A0xab2de4300f6726b0!2sPro%20Ultimate%20Gyms%20-%20Mahavir%20Enclave%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1719172000000!5m2!1sen!2sin" 
+                    class="w-full h-full rounded-xl border-0 opacity-80 hover:opacity-100 transition duration-300"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modern Site Footer Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-xs text-slate-600">
+        <p>&copy; 2026 Pro Ultimate Gyms - Mahavir Enclave. Built for Premium Performance.</p>
+    </footer>
+
+    <!-- Razorpay Payment Checkout Integration Script -->
+    <script>
+        function payWithRazorpay(amountInINR, planName) {
+            var options = {
+                "key": "YOUR_RAZORPAY_KEY_ID", // Replace with real Razorpay Key ID from Dashboard
+                "amount": amountInINR * 100, // Calculated in paise
+                "currency": "INR",
+                "name": "Pro Ultimate Gyms",
+                "description": planName,
+                "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=100&h=100&fit=crop", // Placeholder logo
+                "handler": function (response){
+                    alert("Payment Successfully Cleared! Verification ID: " + response.razorpay_payment_id);
+                },
+                "prefill": {
+                    "name": "",
+                    "email": "",
+                    "contact": ""
+                },
+                "theme": {
+                    "color": "#f97316" // Synchronized premium orange brand accent
+                }
+            };
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+        }
+    </script>
+</body>
+</html>
